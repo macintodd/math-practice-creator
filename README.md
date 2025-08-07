@@ -1,6 +1,6 @@
-# Math Practice Creator
+# Notes Creator
 
-A React application for creating custom math worksheets with drag-and-drop functionality, LaTeX equation support, and Google Drive integration.
+A React-based application for creating and managing digital notes and documents.
 
 ## Features
 
@@ -17,7 +17,7 @@ A React application for creating custom math worksheets with drag-and-drop funct
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
-   cd math-practice-creator
+   cd notes-creator
    ```
 
 2. **Install dependencies**

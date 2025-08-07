@@ -974,7 +974,7 @@ function AppContent() {
             const pdfBlob = pdf.output('blob');
             console.log('PDF blob created, size:', pdfBlob.size);
             
-            const folderPath = `Math Practice Creator/Unit ${headerInfo.unit}/Worksheet PDFs`;
+            const folderPath = `Notes Creator/Unit ${headerInfo.unit}/Worksheet PDFs`;
             console.log('Saving to folder path:', folderPath);
             
             await serviceToUse.savePDFFile(filename, pdfBlob, folderPath);
