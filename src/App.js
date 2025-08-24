@@ -309,7 +309,7 @@ function AppContent() {
 
       // Get header data from worksheet or use requested filename
       const headerData = worksheetData.header || {};
-      const fileName = requestedFileName || `U${headerData.unit || ''}L${headerData.lesson || ''}${headerData.title || 'Worksheet'}`;
+  const fileName = requestedFileName || `U${headerData.unit || ''}L${headerData.lesson || ''}Practice${headerData.title || 'Worksheet'}`;
       const unitNumber = headerData.unit || '1';
 
       console.log('Saving with filename:', fileName);
@@ -974,7 +974,7 @@ function AppContent() {
             const pdfBlob = pdf.output('blob');
             console.log('PDF blob created, size:', pdfBlob.size);
             
-            const folderPath = `Notes Creator/Unit ${headerInfo.unit}/Worksheet PDFs`;
+            const folderPath = `Math Practice Creator/Unit ${headerInfo.unit}/Worksheet PDFs`;
             console.log('Saving to folder path:', folderPath);
             
             await serviceToUse.savePDFFile(filename, pdfBlob, folderPath);
